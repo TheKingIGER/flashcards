@@ -159,6 +159,7 @@ public class MainActivity extends AppCompatActivity {
     private void updateListFiles() {
         copyFileFromResource(R.raw.minna_no_nihongo_lektion0, "Minna no Nihongo","Lektion 0.csv");
         copyFileFromResource(R.raw.minna_no_nihongo_lektion1, "Minna no Nihongo","Lektion 1.csv");
+        copyFileFromResource(R.raw.minna_no_nihongo_lektion1_zusatzvokabular, "Minna no Nihongo","Lektion 1 Länder, Menschen und Sprache.csv");
         copyFileFromResource(R.raw.minna_no_nihongo_lektion2, "Minna no Nihongo","Lektion 2.csv");
         copyFileFromResource(R.raw.minna_no_nihongo_lektion3, "Minna no Nihongo","Lektion 3.csv");
         copyFileFromResource(R.raw.minna_no_nihongo_lektion4, "Minna no Nihongo","Lektion 4.csv");
@@ -171,18 +172,19 @@ public class MainActivity extends AppCompatActivity {
         copyFileFromResource(R.raw.minna_no_nihongo_particle, "Minna no Nihongo","Particle.csv");
         copyFileFromResource(R.raw.minna_no_nihongo_kanji, "Minna no Nihongo","Kanji.csv");
 
-        copyFileFromResource(R.raw.japanese_hiragana, "Japanese","hiragana.csv");
-        copyFileFromResource(R.raw.japanese_katakana, "Japanese","katakana.csv");
-        copyFileFromResource(R.raw.japanese_basic, "Japanese","basic.csv");
-        copyFileFromResource(R.raw.japanese_numbers, "Japanese","numbers.csv");
-        copyFileFromResource(R.raw.japanese_beverages, "Japanese", "beverages.csv");
-        copyFileFromResource(R.raw.japanese_dates, "Japanese","dates.csv");
+        copyFileFromResource(R.raw.japanese_hiragana, "Japanese","Hiragana.csv");
+        copyFileFromResource(R.raw.japanese_katakana, "Japanese","Katakana.csv");
+        copyFileFromResource(R.raw.japanese_basic, "Japanese","Basic.csv");
+        copyFileFromResource(R.raw.japanese_numbers, "Japanese","Numbers - Zahlen.csv");
+        copyFileFromResource(R.raw.japanese_beverages, "Japanese", "Beverages - Getränke.csv");
+        copyFileFromResource(R.raw.japanese_dates, "Japanese","Dates - Datum & Zeiten.csv");
         copyFileFromResource(R.raw.japanese_kanji_grade1, "Japanese","Kanji 1.csv");
         copyFileFromResource(R.raw.japanese_kanji_grade2, "Japanese","Kanji 2.csv");
         copyFileFromResource(R.raw.japanese_kanji_grade3, "Japanese","Kanji 3.csv");
         copyFileFromResource(R.raw.japanese_kanji_grade4, "Japanese","Kanji 4.csv");
         copyFileFromResource(R.raw.japanese_kanji_grade5, "Japanese","Kanji 5.csv");
         copyFileFromResource(R.raw.japanese_kanji_grade6, "Japanese","Kanji 6.csv");
+        copyFileFromResource(R.raw.japanese_countries, "Japanese","Countries, People & Language.csv");
 
         copyFileFromResource(R.raw.chinese_basic, "Chinese","basic.csv");
         copyFileFromResource(R.raw.chinese_basic_introduction, "Chinese","introduction.csv");
