@@ -17,15 +17,16 @@ import java.util.List;
 
 public class ListItem {
 
-    private static final int LEFT_IDX = 0;
-    private static final int RIGHT_IDX = 1;
+    private static final int LEFT_IDX = 0; // Erste Spalte der CSV
+    private static final int RIGHT_IDX = 1; // Zweite Spalte der CSV
 
-    private String filePath;
+    private String filePath; // Variable zum File Path
 
     public String getFilePath() {
         return filePath;
     }
 
+    // Klasse für die Item Pairs
     public static class ItemPair {
         public String left;
         public String right;
@@ -36,8 +37,8 @@ public class ListItem {
         }
     }
 
-    private ItemPair header;
-    private List<ItemPair> itemPairs = new ArrayList<>();
+    private ItemPair header; // Erste Zeile der CSV
+    private List<ItemPair> itemPairs = new ArrayList<>(); // Liste der Item Pairs
 
     public ListItem(String filePath) {
         this.filePath = filePath;
@@ -48,31 +49,35 @@ public class ListItem {
         return itemPairs;
     }
 
+    // Einlesen der CSV
     private static List<List<String>> getFileContent(File file) throws IOException {
 
-        List<List<String>> fileContentList = new ArrayList<>();
+        List<List<String>> fileContentList = new ArrayList<>(); // Neue Liste
 
         if(file.exists()) {
 
+            // Einlesen der CSV
             InputStream inputStream = new FileInputStream(file);
             Reader inputStreamReader = new InputStreamReader(inputStream);
             BufferedReader br = new BufferedReader(inputStreamReader);
 
             String line;
 
+            // Lesen jeder Zeile in der CSV
             while ((line = br.readLine()) != null) {
-                if(line.contains(";")) {
+                if(line.contains(";")) { // Überprüfung ob in der Zeile ein ; vorhanden ist
                     ArrayList<String> values = new ArrayList<>(Arrays.asList(line.split(";")));
-                    fileContentList.add(values);
+                    fileContentList.add(values); // Hinzufügen der Zeile zur Liste
                 }
             }
 
             br.close();
         }
 
-        return fileContentList;
+        return fileContentList;  // Return Liste mit Inhalt der CSV
     }
 
+    // Verarbeitung der CSV
     private void readFile()
     {
         File file = new File(App.getListRootDir(), filePath);
@@ -102,10 +107,12 @@ public class ListItem {
         return itemPairs.size();
     }
 
+    // Linker Header
     public String getLeftHeader() {
         return header.left;
     }
 
+    // Rechter Header
     public String getRightHeader() {
         return header.right;
     }
