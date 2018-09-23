@@ -1,4 +1,4 @@
-package com.quchen.flashcard;
+package com.TheKing.flashcard;
 
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;

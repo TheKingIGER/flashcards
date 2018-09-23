@@ -8,12 +8,13 @@
         android:id="@+id/folderListTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="@string/tv_results"
-        android:textSize="50sp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"/>
+        android:textColor="@color/colorAccentText"
+        android:textSize="50sp" />
 
     <TextView
         android:id="@+id/tv_resultScore"
@@ -21,7 +22,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/folderListTitle"
         android:layout_centerHorizontal="true"
-        android:text="@string/tv_results" />
+        android:text="@string/tv_results"
+        android:textColor="@color/colorAccentText" />
 
     <TextView
         android:id="@+id/tv_resultComment"
@@ -29,7 +31,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/tv_resultScore"
         android:layout_centerHorizontal="true"
-        android:text="@string/tv_results" />
+        android:text="@string/tv_results"
+        android:textColor="@color/colorAccentText" />
 
         <LinearLayout
             android:layout_width="match_parent"

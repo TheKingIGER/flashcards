@@ -8,14 +8,15 @@
         android:id="@+id/listTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="@string/tv_lists"
-        android:textSize="24sp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"/>
+        android:textColor="@color/colorAccentText"
+        android:textSize="24sp" />
 
     <LinearLayout
         android:layout_width="match_parent"

@@ -1,4 +1,4 @@
-package com.quchen.flashcard;
+package com.TheKing.flashcard;
 
 import android.Manifest;
 import android.content.Context;
@@ -146,7 +146,7 @@ public class ListActivity extends AppCompatActivity {
     }
 
     public void startListView(ListFileItem listFileItem) {
-        Intent intent = new Intent("com.quchen.flashcard.ListViewActivity");
+        Intent intent = new Intent("com.TheKing.flashcard.ListViewActivity");
         intent.putExtra(ListViewActivity.KEY_FILE, listFileItem.getFilePath());
         startActivity(intent);
     }
@@ -157,7 +157,7 @@ public class ListActivity extends AppCompatActivity {
     }
 
     public void startGameActivity(String files[]) {
-        Intent intent = new Intent("com.quchen.flashcard.GameActivity");
+        Intent intent = new Intent("com.TheKing.flashcard.GameActivity");
         intent.putExtra(GameActivity.KEY_FILE_LIST, files);
         startActivity(intent);
     }

@@ -1,4 +1,4 @@
-package com.quchen.flashcard;
+package com.TheKing.flashcard;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;

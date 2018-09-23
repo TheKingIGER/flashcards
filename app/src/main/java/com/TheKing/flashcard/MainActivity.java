@@ -1,4 +1,4 @@
-package com.quchen.flashcard;
+package com.TheKing.flashcard;
 
 import android.app.AlertDialog;
 import android.content.Context;
@@ -108,7 +108,7 @@ public class MainActivity extends AppCompatActivity {
         public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
             String folder = folderAdapter.getItem(position);
 
-            Intent intent = new Intent("com.quchen.flashcard.ListActivity");
+            Intent intent = new Intent("com.TheKing.flashcard.ListActivity");
             intent.putExtra(ListActivity.KEY_FOLDER, folder);
             startActivity(intent);
         }
@@ -172,19 +172,19 @@ public class MainActivity extends AppCompatActivity {
         copyFileFromResource(R.raw.minna_no_nihongo_particle, "Minna no Nihongo","Particle.csv");
         copyFileFromResource(R.raw.minna_no_nihongo_kanji, "Minna no Nihongo","Kanji.csv");
 
-        copyFileFromResource(R.raw.japanese_hiragana, "Japanese","Hiragana.csv");
-        copyFileFromResource(R.raw.japanese_katakana, "Japanese","Katakana.csv");
-        copyFileFromResource(R.raw.japanese_basic, "Japanese","Basic.csv");
-        copyFileFromResource(R.raw.japanese_numbers, "Japanese","Numbers - Zahlen.csv");
-        copyFileFromResource(R.raw.japanese_beverages, "Japanese", "Beverages - Getränke.csv");
-        copyFileFromResource(R.raw.japanese_dates, "Japanese","Dates - Datum & Zeiten.csv");
-        copyFileFromResource(R.raw.japanese_kanji_grade1, "Japanese","Kanji 1.csv");
-        copyFileFromResource(R.raw.japanese_kanji_grade2, "Japanese","Kanji 2.csv");
-        copyFileFromResource(R.raw.japanese_kanji_grade3, "Japanese","Kanji 3.csv");
-        copyFileFromResource(R.raw.japanese_kanji_grade4, "Japanese","Kanji 4.csv");
-        copyFileFromResource(R.raw.japanese_kanji_grade5, "Japanese","Kanji 5.csv");
-        copyFileFromResource(R.raw.japanese_kanji_grade6, "Japanese","Kanji 6.csv");
-        copyFileFromResource(R.raw.japanese_countries, "Japanese","Countries, People & Language.csv");
+        copyFileFromResource(R.raw.japanese_hiragana, "Japanisch","Hiragana.csv");
+        copyFileFromResource(R.raw.japanese_katakana, "Japanisch","Katakana.csv");
+        copyFileFromResource(R.raw.japanese_basic, "Japanisch","Basic.csv");
+        copyFileFromResource(R.raw.japanese_numbers, "Japanisch","Zahlen.csv");
+        copyFileFromResource(R.raw.japanese_beverages, "Japanisch", "Getränke.csv");
+        copyFileFromResource(R.raw.japanese_dates, "Japanisch","Datum & Zeiten.csv");
+        copyFileFromResource(R.raw.japanese_kanji_grade1, "Japanisch","Kanji 1.csv");
+        copyFileFromResource(R.raw.japanese_kanji_grade2, "Japanisch","Kanji 2.csv");
+        copyFileFromResource(R.raw.japanese_kanji_grade3, "Japanisch","Kanji 3.csv");
+        copyFileFromResource(R.raw.japanese_kanji_grade4, "Japanisch","Kanji 4.csv");
+        copyFileFromResource(R.raw.japanese_kanji_grade5, "Japanisch","Kanji 5.csv");
+        copyFileFromResource(R.raw.japanese_kanji_grade6, "Japanisch","Kanji 6.csv");
+        copyFileFromResource(R.raw.japanese_countries, "Japanisch","Länder, Nationalitäten & Sprache.csv");
 
         copyFileFromResource(R.raw.chinese_basic, "Chinese","basic.csv");
         copyFileFromResource(R.raw.chinese_basic_introduction, "Chinese","introduction.csv");

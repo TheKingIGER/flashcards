@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.quchen.flashcard">
+    package="com.TheKing.flashcard">
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
@@ -27,7 +27,7 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
-                <action android:name="com.quchen.flashcard.ListActivity" />
+                <action android:name="com.TheKing.flashcard.ListActivity" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -37,7 +37,7 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
-                <action android:name="com.quchen.flashcard.GameActivity" />
+                <action android:name="com.TheKing.flashcard.GameActivity" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -46,10 +46,10 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
-                <action android:name="com.quchen.flashcard.ListViewActivity" />
+                <action android:name="com.TheKing.flashcard.ListViewActivity" />
 
                 <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>>
+            </intent-filter>
         </activity>
     </application>
 

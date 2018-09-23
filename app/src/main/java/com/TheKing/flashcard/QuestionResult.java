@@ -1,4 +1,4 @@
-package com.quchen.flashcard;
+package com.TheKing.flashcard;
 
 /**
  * Created by Lars on 10.02.2018.
