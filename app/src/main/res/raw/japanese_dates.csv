@@ -1,89 +1,103 @@
-Japanisch;English
-せんしゅう;last week
-こんしゅう;this week
-らいしゅう;next week
-せんげつ;last month
-こんげつ;this month
-らいげつ;next month
-きょねん;last year
-ことし;this year
-らいねん;next year
+Japanisch;Deutsch
+せんしゅう;letzte Woche
+こんしゅう;diese Woche
+らいしゅう;nächste Woche
+せんげつ;letzter Monat
+こんげつ;diese Monat
+らいげつ;nächste Monat
+きょねん;letztes Jahr
+ことし;dieses Jahr
+らいねん;nächstes jahr
 
--ねん;in year -
-なんねん;in what year
--がつ;- month
-なんがつ;What month
+-ねん; Jahr -
+なんねん;welches Jahr
+-がつ;- Monat
+なんがつ;welcher Monat
 
-いちがつ;January
-にがつ;February
-さんがつ;March
+いちがつ;Januar
+にがつ;Februar
+さんがつ;März
 しがつ;April
-ごがつ;May
-ろくがつ;June
-しちがつ;July
+ごがつ;Mai
+ろくがつ;Juni
+しちがつ;Juli
 はちがつ;August
 くがつ;September
-じゅうがつ;October
+じゅうがつ;Oktober
 じゅういちがつ;November
-じゅうにがつ;December
+じゅうにがつ;Dezember
 
-ついたち;1st of the month
-ふつか;2nd of the month
-みっか;3rd of the month
-よっか;4th of the month
-いつか;5th of the month
-むいか;6th of the month
-なのか;7th of the month
-ようか;8th of the month
-ここのか;9th of the month
-とおか;10th of the month
-じゅういちにち;11th of the month
-じゅうににち;12th of the month
-じゅうさんにち;13th of the month
-じゅうよっか;14th of the month
-じゅうごにち;15th of the month
-じゅうろくにち;16th of the month
-じゅうしちにち;17th of the month
-じゅうはちにち;18th of the month
-じゅうくにち;19th of the month
-はつか;20th of the month
-にじゅういちにち;21th of the month
-にじゅうににち;22th of the month
-にじゅうさんにち;23th of the month
-にじゅうよっか;24th of the month
-にじゅうごにち;25th of the month
-にじゅうろくにち;26th of the month
-にじゅうしちにち;27th of the month
-にじゅうはちにち;28th of the month
-にじゅうくにち;29th of the month
-さんじゅうにち;30th of the month
-さんじゅういちにち;31th of the month
+ついたち;der 1. des Monats
+ふつか;der 2. des Monats
+みっか;der 3. des Monats
+よっか;der 4. des Monats
+いつか;der 5. des Monats
+むいか;der 6. des Monats
+なのか;der 7. des Monats
+ようか;der 8. des Monats
+ここのか;der 9. des Monats
+とおか;der 10. des Monats
+じゅういちにち;der 11. des Monats
+じゅうににち;der 12. des Monats
+じゅうさんにち;der 13. des Monats
+じゅうよっか;der 14. des Monats
+じゅうごにち;der 15. des Monats
+じゅうろくにち;der 16. des Monats
+じゅうしちにち;der 17. des Monats
+じゅうはちにち;der 18. des Monats
+じゅうくにち;der 19. des Monats
+はつか;der 20. des Monats
+にじゅういちにち;der 21. des Monats
+にじゅうににち;der 22. des Monats
+にじゅうさんにち;der 23. des Monats
+にじゅうよっか;der 24. des Monats
+にじゅうごにち;der 25. des Monats
+にじゅうろくにち;der 26. des Monats
+にじゅうしちにち;der 27. des Monats
+にじゅうはちにち;der 28. des Monats
+にじゅうくにち;der 29. des Monats
+さんじゅうにち;der 30. des Monats
+さんじゅういちにち;der 31. des Monats
 
 -にち;-th of the month
-なんにち;What day
+なんにち;welcher tag
 
-いちじ;1 o'clock
-にじ;2 o'clock
-さんじ;3 o'clock
-よじ;4 o'clock
-ごじ;5 o'clock
-ろくじ;6 o'clock
-しちじ;7 o'clock
-はちじ;8 o'clock
-くじ;9 o'clock
-しゅうじ;10 o'clock
-しゅういちじ;11 o'clock
-しゅうにじ;12 o'clock
-なんじ;What time
+いちじ;1 Uhr
+にじ;2 Uhr
+さんじ;3 Uhr
+よじ;4 Uhr
+ごじ;5 Uhr
+ろくじ;6 Uhr
+しちじ;7 Uhr
+はちじ;8 Uhr
+くじ;9 Uhr
+しゅうじ;10 Uhr
+しゅういちじ;11 Uhr
+しゅうにじ;12 Uhr
+なんじ;wie viel Uhr
 
-ごふん;5 minutes
-じゅっぷん;10 minutes
+いっぷん;1 Minute
+にふん;2 Minuten
+さんぷん;3 Minuten
+よんぷん;4 Minuten
+ごふん;5 Minuten
+ろっぷん;6 Minuten
+ななふん;7 Minuten
+はっぷん;8 Minuten
+きゅうふん;9 Minuten
+じゅっぷん;10 Minuten
+さんじゅっぷん;30 Minuten
 
-にちようび;Sunday
-げつようび;Monday
-かようび;Tuesday
-すいようび;Wednesday
-もくようび;Thursday
-きんようび;Friday
-どようび;Saturday
-なんようび;What day of the week
+-はん;Halb - Uhr
+
+ごぜん;morgens (Uhrzeit)
+ごご;nachmittags (Uhrzeit)
+
+にちようび;Sonntag
+げつようび;Montag
+かようび;Dienstag
+すいようび;Mittwoch
+もくようび;Donnerstag
+きんようび;Freitag
+どようび;Samstag
+なんようび;Welcher Tag der Woche
