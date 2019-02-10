@@ -25,7 +25,12 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -120,6 +125,29 @@ public class ListActivity extends AppCompatActivity {
             return convertView;
         }
     }
+
+    /**private void readFile()
+    {
+        File file = new File(App.getJsonRootDir(), "");
+        String text = "";
+        try {
+            FileInputStream is = new FileInputStream(file);
+            int size = is.available();
+            byte[] buffer = new byte[size];
+            is.read(buffer);
+            is.close();
+            text = new String(buffer);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        try{
+            JSONObject json = new JSONObject(text);
+            JSONArray chapterJson = json.getJSONArray("chapter");
+
+        } catch (JSONException e){
+            e.printStackTrace();
+        }
+    }*/
 
     private String folderName;
     private ListAdapter listAdapter;

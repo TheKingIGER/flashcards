@@ -21,8 +21,14 @@ public class App extends Application {
         return new File(context.getExternalCacheDir(), "lists");
     }
 
+    public static File getJsonRootDir() {
+        return new File(context.getExternalCacheDir(), "json");
+    }
+
     public void onCreate() {
         super.onCreate();
         App.context = getApplicationContext();
+        File file = new File(context.getExternalCacheDir(),"Json");
+        file.mkdir();
     }
 }

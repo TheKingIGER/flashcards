@@ -2,7 +2,7 @@
     <string name="app_name">FlashCards</string>
     <string name="tv_results">Results</string>
     <string name="tv_folders">Folders</string>
-    <string name="tv_lists">Lists</string>
+    <string name="tv_chapter">Chapter</string>
     <string name="btn_addFolder">add folder</string>
     <string name="btn_playAgainAll">Retry</string>
     <string name="btn_playAgainWrong">Retry Wrong</string>
@@ -28,4 +28,6 @@
     <string name="folderCreateError">An error occurred while creating the folder</string>
     <string name="addFileAlert">Please add a file</string>
     <string name="question">Question</string>
+    <string name="tv_lists">Lists</string>
+
 </resources>

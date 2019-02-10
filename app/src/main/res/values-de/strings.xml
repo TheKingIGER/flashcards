@@ -3,6 +3,7 @@
     <string name="tv_results">Ergebnisse</string>
     <string name="tv_folders">Ordner</string>
     <string name="tv_lists">Listen</string>
+    <string name="tv_chapter">Kapitel</string>
     <string name="btn_addFolder">Ordner hinzufügen</string>
     <string name="btn_playAgainAll">Nochmal</string>
     <string name="btn_playAgainWrong">Nochmal die falschen</string>

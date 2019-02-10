@@ -119,7 +119,23 @@ public class MainActivity extends AppCompatActivity {
         File folder = new File(App.getListRootDir(), folderName);
         folder.mkdirs();
         File file = new File(folder, fileName);
+        try {
+            OutputStream out = new FileOutputStream(file);
+            byte[] buffer = new byte[1024];
+            int len;
+            while((len = in.read(buffer, 0, buffer.length)) != -1){
+                out.write(buffer, 0, len);
+            }
+            in.close();
+            out.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
+    private void copyJsonFromResource(int id, String fileName) {
+        InputStream in = getResources().openRawResource(id);
+        File file = new File(App.getJsonRootDir(), fileName);
         try {
             OutputStream out = new FileOutputStream(file);
             byte[] buffer = new byte[1024];
@@ -213,12 +229,17 @@ public class MainActivity extends AppCompatActivity {
         cleanupOldFiles();
     }
 
+    private void updateJsonFiles(){
+        copyJsonFromResource(R.raw.japanese, "japanese.json" );
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         updateListFiles();
+        updateJsonFiles();
 
         folderAdapter = new FolderAdapter(this);
         folderAdapter.addAll(getFolders());
