@@ -196,6 +196,8 @@ public class MainActivity extends AppCompatActivity {
         copyFileFromResource(R.raw.japanese_body, "Japanisch","Körper.csv");
         copyFileFromResource(R.raw.japanese_persons, "Japanisch","Personen.csv");
         copyFileFromResource(R.raw.japanese_positions, "Japanisch","Positionen.csv");
+        copyFileFromResource(R.raw.japanese_counting, "Japanisch","Zähleinheiten.csv");
+        copyFileFromResource(R.raw.japanese_buildings, "Japanisch","Gebäude und Orte.csv");
 
         copyFileFromResource(R.raw.chinese_basic, "Chinese","basic.csv");
         copyFileFromResource(R.raw.chinese_basic_introduction, "Chinese","introduction.csv");
