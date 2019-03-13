@@ -3,7 +3,6 @@
     <string name="tv_results">Ergebnisse</string>
     <string name="tv_folders">Ordner</string>
     <string name="tv_lists">Listen</string>
-    <string name="tv_chapter">Kapitel</string>
     <string name="btn_addFolder">Ordner hinzufügen</string>
     <string name="btn_playAgainAll">Nochmal</string>
     <string name="btn_playAgainWrong">Nochmal die falschen</string>
@@ -29,4 +28,7 @@
     <string name="resultCommentLess50">Fail of the week!</string>
     <string name="addFileAlert">Bitte füge eine Liste hinzu</string>
     <string name="question">Frage</string>
+    <string name="tv_chapter">Lektion</string>
+    <string name="btn_quiz">Quiz</string>
+    <string name="btn_vocabulary">Vokabeln</string>
 </resources>

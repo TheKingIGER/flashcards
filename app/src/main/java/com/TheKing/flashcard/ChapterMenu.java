@@ -1,12 +1,14 @@
 package com.TheKing.flashcard;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -23,14 +25,29 @@ import java.util.ArrayList;
 
 public class ChapterMenu extends AppCompatActivity {
 
+    private static final int STORAGE_READ_PERMISSOIN_REQUEST_ID = 42;
+    private static final int GET_FILE_REQUEST_ID = 1337;
     private JSONObject Chapter;
      ArrayList<String> ModuleList;
 
     private class MenuAdapter extends ArrayAdapter<String> {
 
-        public MenuAdapter(Context context) {
+        private final ListView listView;
+
+        private MenuAdapter(Context context, ListView listView) {
             super(context, 0);
+
+            this.listView = listView;
+
+            listView.setOnItemClickListener(itemClickListener);
         }
+
+        private AdapterView.OnItemClickListener itemClickListener = new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
+                //startGameActivity();
+            }
+        };
 
         @NonNull
         @Override
@@ -51,9 +68,16 @@ public class ChapterMenu extends AppCompatActivity {
 
     private MenuAdapter MenuAdapter;
 
+    public void startGameActivity(String files[]) {
+        Intent intent = new Intent("com.TheKing.flashcard.GameActivity");
+        intent.putExtra(GameActivity.KEY_FILE_LIST, files);
+        startActivity(intent);
+    }
+
     public ChapterMenu(JSONObject Chapter) {
         this.Chapter = Chapter;
     }
+
     public ChapterMenu() {
 
         File file = new File(App.getJsonRootDir(), "japanese.json");
@@ -105,10 +129,11 @@ public class ChapterMenu extends AppCompatActivity {
 
         readJsonObject();
 
-        MenuAdapter = new MenuAdapter(this);
+        ListView listView = findViewById(R.id.ChapterList);
+
+        MenuAdapter = new MenuAdapter(this, listView);
         MenuAdapter.addAll(ModuleList);
 
-        ListView listView = findViewById(R.id.ChapterList);
         listView.setAdapter(MenuAdapter);
 
         TextView title = findViewById(R.id.ChapterMenuTitle);
